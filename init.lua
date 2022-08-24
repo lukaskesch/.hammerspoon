@@ -3,6 +3,7 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "W", function()
   hs.alert.show("Hello World")
 end)
 
+
 hs.hotkey.bind({"alt"}, "V", function()
   local win = hs.window.focusedWindow()
   hs.application.launchOrFocus("Visual Studio Code")
