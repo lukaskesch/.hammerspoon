@@ -9,12 +9,13 @@ hs.hotkey.bind({"cmd", "alt", "ctrl"}, "R", function()
 end)
 hs.alert.show("Config loaded")
 
+-- Playes "Intro" song on spotify
+hs.hotkey.bind({"alt", "shift"}, "Z", function()
+  hs.spotify.playTrack("spotify:track:2usrT8QIbIk9y0NEtQwS4j")
+end)
+
 -- Playes "Coding Mode" playlist on spotify
 hs.hotkey.bind({"alt"}, "Z", function()
-  -- hs.spotify.play()
-  -- hs.spotify.displayCurrentTrack()
-  -- print(hs.inspect(hs.spotify.getCurrentTrackId()))
-  -- hs.spotify.playTrack("spotify:track:2usrT8QIbIk9y0NEtQwS4j")
   hs.spotify.playTrack("spotify:playlist:37i9dQZF1DX5trt9i14X7j?si=805a4491da454409")
 end)
 
