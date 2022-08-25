@@ -20,12 +20,14 @@ end)
 hs.hotkey.bind({"alt"}, "Z", function()
   
   -- https://github.com/toy/blueutil
+  -- Connects to the WH-1000XM5 headphones
   hs.execute("/opt/homebrew/bin/blueutil --connect 88-c9-e8-3b-20-66")
 
+  -- Playes "Coding Mode" playlist on spotify
   hs.spotify.playTrack("spotify:playlist:37i9dQZF1DX5trt9i14X7j?si=805a4491da454409")
 
+  -- Enables the do not disturb mode an all devices
   hs.shortcuts.run("Enable dnd")
-
 end)
 
 
