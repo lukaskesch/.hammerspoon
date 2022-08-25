@@ -25,6 +25,8 @@ hs.hotkey.bind({"alt"}, "Z", function()
 
   -- Playes "Coding Mode" playlist on spotify
   hs.spotify.playTrack("spotify:playlist:37i9dQZF1DX5trt9i14X7j?si=805a4491da454409")
+  -- This command is intentionally used twice. If spotify is not open, the first command will only open spotify in the background. The second command will then play the playlist.
+  hs.spotify.playTrack("spotify:playlist:37i9dQZF1DX5trt9i14X7j?si=805a4491da454409")
 
   -- Enables the do not disturb mode an all devices
   hs.shortcuts.run("Enable dnd")
