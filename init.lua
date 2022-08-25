@@ -16,10 +16,18 @@ hs.hotkey.bind({"alt", "shift"}, "Z", function()
   hs.spotify.playTrack("spotify:track:2usrT8QIbIk9y0NEtQwS4j")
 end)
 
--- Playes "Coding Mode" playlist on spotify (Note: The id can be obtained from the spotify share url)
+-- Playes "Coding Mode" playlist on spotify (Note: The id can be obtained from the spotify share url) and enables do not disturb mode 
 hs.hotkey.bind({"alt"}, "Z", function()
+  
+  -- https://github.com/toy/blueutil
+  hs.execute("/opt/homebrew/bin/blueutil --connect 88-c9-e8-3b-20-66")
+
   hs.spotify.playTrack("spotify:playlist:37i9dQZF1DX5trt9i14X7j?si=805a4491da454409")
+
+  hs.shortcuts.run("Enable dnd")
+
 end)
+
 
 -- Focus VS Code
 hs.hotkey.bind({"alt"}, "V", function()
